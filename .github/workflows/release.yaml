@@ -1,0 +1,35 @@
+name: release
+
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - frontend/**
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./frontend
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: 17
+        cache: yarn
+        cache-dependency-path: ./frontend/yarn.lock
+    - uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-region: eu-south-1
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    - run: yarn install --frozen-lockfile --prod
+    - run: yarn build
+    - run: yarn deploy
+    - run: yarn invalidate-cache
+      env:
+        CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}

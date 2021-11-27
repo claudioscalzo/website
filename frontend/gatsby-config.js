@@ -2,7 +2,7 @@ const siteAddress = new URL("https://claudioscalzo.com");
 
 module.exports = {
   siteMetadata: {
-    siteUrl: siteAddress,
+    siteUrl: siteAddress.href,
     title: "ClaudioScalzo.com",
   },
   plugins: [
