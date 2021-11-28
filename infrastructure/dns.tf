@@ -2,34 +2,7 @@ locals {
   default_name = ""
   default_ttl  = 3600
 
-  records = [
-    {
-      type = "MX"
-      records = [
-        "10 mx01.mail.icloud.com.",
-        "10 mx02.mail.icloud.com.",
-      ]
-    },
-    {
-      type = "TXT"
-      records = [
-        "apple-domain=oEIuGE8eyTdOc3yf",
-        "v=spf1 redirect=icloud.com",
-      ]
-    },
-    {
-      name = "sig1._domainkey"
-      type = "CNAME"
-      records = [
-        "sig1.dkim.claudioscalzo.com.at.icloudmailadmin.com."
-      ]
-    },
-    {
-      name    = "www"
-      type    = "CNAME"
-      records = [var.domain]
-    }
-  ]
+  records = yamldecode(file("${path.module}/${var.dns_records_path}"))
 }
 
 
