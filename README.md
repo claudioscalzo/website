@@ -1,5 +1,7 @@
 # 🍕 ClaudioScalzo.com
 
+[![Release Status](https://github.com/claudioscalzo/website/actions/workflows/release.yaml/badge.svg)](https://github.com/claudioscalzo/website/actions/workflows/release.yaml)
+
 This repo contains the resources needed to run the [claudioscalzo.com](https://claudioscalzo.com) website.
 
 ## 🍣 Components
