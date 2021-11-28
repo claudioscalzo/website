@@ -12,10 +12,9 @@ infrastructure/
 ├── <a href="./certificate.tf">certificate.tf</a>
 ├── <a href="./dns.tf">dns.tf</a>
 ├── <a href="./common.tf">common.tf</a>
-├── terraform.tf
-├── variables.tf
-├── vars/
-└── data/
+├── <a href="./terraform.tf">terraform.tf</a>
+├── <a href="./variables.tf">variables.tf</a>
+└── <a href="./vars/">vars/</a>
 </pre>
 </big>
 
