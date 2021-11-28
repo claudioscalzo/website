@@ -20,8 +20,14 @@ resource "aws_s3_bucket_public_access_block" "main" {
 
 data "aws_iam_policy_document" "cloudfront_policy" {
   statement {
-    actions   = ["s3:GetObject"]
-    resources = ["${aws_s3_bucket.main.arn}/*"]
+    actions = [
+      "s3:ListBucket",
+      "s3:GetObject",
+    ]
+    resources = [
+      aws_s3_bucket.main.arn,
+      "${aws_s3_bucket.main.arn}/*",
+    ]
 
     principals {
       type        = "AWS"
