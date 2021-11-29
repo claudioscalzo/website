@@ -1,0 +1,5 @@
+# Javascript
+.cache/
+node_modules/
+public/
+package-lock.json

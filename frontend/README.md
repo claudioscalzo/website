@@ -39,19 +39,19 @@ The following permissions are needed to properly deploy to the S3 bucket and inv
 
 ```json
 {
-    "Effect": "Allow",
-    "Action": [
-        "s3:GetBucketLocation",
-        "s3:ListBucket",
-        "s3:GetObject",
-        "s3:PutObject",
-        "s3:DeleteObject",
-        "cloudfront:CreateInvalidation"
-    ],
-    "Resource": [
-        "arn:aws:cloudfront::<ACCOUNT_ID>:distribution/<DISTRIBUTION_ID>",
-        "arn:aws:s3:::<BUCKET_NAME>/*",
-        "arn:aws:s3:::<BUCKET_NAME>"
-    ]
+  "Effect": "Allow",
+  "Action": [
+    "s3:GetBucketLocation",
+    "s3:ListBucket",
+    "s3:GetObject",
+    "s3:PutObject",
+    "s3:DeleteObject",
+    "cloudfront:CreateInvalidation"
+  ],
+  "Resource": [
+    "arn:aws:cloudfront::<ACCOUNT_ID>:distribution/<DISTRIBUTION_ID>",
+    "arn:aws:s3:::<BUCKET_NAME>/*",
+    "arn:aws:s3:::<BUCKET_NAME>"
+  ]
 }
 ```
