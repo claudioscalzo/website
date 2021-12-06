@@ -1,9 +1,17 @@
 const siteAddress = new URL("https://claudioscalzo.com");
+const siteTitle = "ClaudioScalzo.com";
 
 module.exports = {
   siteMetadata: {
+    author: "@claudioscalzo",
+    title: siteTitle,
+    siteDescription: siteTitle,
+    siteHeadline: siteTitle,
+    siteImage: "/profile.jpg",
+    siteLanguage: "en",
+    siteTitle: siteTitle,
+    siteTitleAlt: siteTitle,
     siteUrl: siteAddress.href,
-    title: "ClaudioScalzo.com",
   },
   plugins: [
     {
@@ -16,6 +24,37 @@ module.exports = {
         acl: null,
         enableS3StaticWebsiteHosting: false,
       },
+    },
+    {
+      resolve: "@lekoarts/gatsby-theme-cara",
+      options: {
+        basePath: "/",
+        mdx: true,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/images/favicon.svg",
+        icon_options: {
+          purpose: "maskable",
+        },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: `${__dirname}/src/images`
+        }
+      }
     },
   ],
 };
