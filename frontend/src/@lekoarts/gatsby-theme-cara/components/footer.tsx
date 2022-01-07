@@ -2,9 +2,11 @@
 
 /** @jsx jsx */
 import { Box, Flex, Link, jsx } from "theme-ui"
+import Gatsby from "../../../images/gatsby.svg";
+import GitHub from "../../../images/github.svg";
+import AWS from "../../../images/aws.svg";
 
 const Footer = () => {
-
   return (
     <Box as="footer" variant="footer">
       &copy; {new Date().getFullYear()} Claudio Scalzo
@@ -20,22 +22,59 @@ const Footer = () => {
           a: { fontSize: `small` },
         }}
       >
-        <div>Built with</div>
         <Link
           aria-label="Link to the Gatsby source code"
-          sx={{ ml: 1 , mr: 1}}
           href="https://github.com/gatsbyjs/gatsby"
+          style={{
+            "display": "inline-flex",
+            "align-items": "center",
+          }}
         >
-          Gatsby
+          Powered by the <Gatsby width="1rem" sx={{ ml: 1, mr: 1}}/> Gatsby web framework
         </Link>
-        <div>using the</div>
-        {` `}
+      </ Flex>
+      <Flex
+        sx={{
+          justifyContent: `center`,
+          alignItems: `center`,
+          mt: 1,
+          color: `text`,
+          fontWeight: `normal`,
+          fontSize: `small`,
+          a: { fontSize: `small` },
+        }}
+      >
         <Link
-          aria-label="Link to the theme source code"
-          sx={{ ml: 1 , mr: 1 }}
-          href="https://github.com/LekoArts/gatsby-themes/tree/main/themes/gatsby-theme-cara"
+          aria-label="Link to the frontend source code"
+          href="https://github.com/claudioscalzo/website/tree/master/frontend"
+          style={{
+            "display": "inline-flex",
+            "align-items": "center",
+          }}
         >
-          Cara theme
+          Source code available on <GitHub width="1rem" sx={{ ml: 1, mr: 1}}/> GitHub
+        </Link>
+      </Flex>
+      <Flex
+        sx={{
+          justifyContent: `center`,
+          alignItems: `center`,
+          mt: 1,
+          color: `text`,
+          fontWeight: `normal`,
+          fontSize: `small`,
+          a: { fontSize: `small` },
+        }}
+      >
+        <Link
+          aria-label="Link to the infrastructure source code"
+          href="https://github.com/claudioscalzo/website/tree/master/infrastructure"
+          style={{
+            "display": "inline-flex",
+            "align-items": "center",
+          }}
+        >
+          Hosted on <AWS width="1.5rem" sx={{ ml: 1}}/>
         </Link>
       </Flex>
     </Box>
