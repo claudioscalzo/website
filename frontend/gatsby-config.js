@@ -40,15 +40,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        icon: "src/images/favicon.svg",
-        icon_options: {
-          purpose: "maskable",
-        },
-      },
-    },
-    {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
@@ -63,6 +54,12 @@ module.exports = {
           `Raleway`,
         ],
         display: 'swap'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-emoji-favicon',
+      options: {
+        emoji: `🍔`
       }
     },
   ],
