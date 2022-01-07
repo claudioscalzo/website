@@ -1,22 +1,24 @@
+// SHADOWED
+
 import { merge } from "theme-ui"
 import { tailwind } from "@theme-ui/presets"
 
 const theme = merge(tailwind, {
-  initialColorModeName: `dark`,
+  initialColorModeName: `light`,
   config: {
     useCustomProperties: true,
   },
   colors: {
-    primary: tailwind.colors.orange[4],
+    primary: tailwind.colors.orange[7],
     secondary: tailwind.colors.indigo[6],
-    text: tailwind.colors.gray[3],
-    heading: tailwind.colors.white,
-    background: `#141821`,
-    divider: tailwind.colors.gray[8],
-    textMuted: tailwind.colors.gray[5],
-    icon_brightest: tailwind.colors.white,
-    icon_darker: tailwind.colors.gray[7],
-    icon_darkest: tailwind.colors.gray[8],
+    text: tailwind.colors.gray[8],
+    heading: tailwind.colors.black,
+    background: tailwind.colors.gray[1],
+    divider: tailwind.colors.gray[2],
+    textMuted: tailwind.colors.gray[6],
+    icon_brightest: tailwind.colors.gray[2],
+    icon_darker: tailwind.colors.gray[4],
+    icon_darkest: tailwind.colors.gray[6],
     icon_red: tailwind.colors.red[6],
     icon_blue: tailwind.colors.blue[6],
     icon_orange: tailwind.colors.orange[5],
@@ -24,19 +26,6 @@ const theme = merge(tailwind, {
     icon_pink: tailwind.colors.pink[5],
     icon_purple: tailwind.colors.purple[6],
     icon_green: tailwind.colors.green[5],
-    modes: {
-      light: {
-        text: tailwind.colors.gray[8],
-        heading: tailwind.colors.black,
-        primary: tailwind.colors.orange[7],
-        background: tailwind.colors.gray[1],
-        divider: tailwind.colors.gray[2],
-        textMuted: tailwind.colors.gray[6],
-        icon_brightest: tailwind.colors.gray[2],
-        icon_darker: tailwind.colors.gray[4],
-        icon_darkest: tailwind.colors.gray[6],
-      },
-    },
   },
   breakpoints: [`400px`, `600px`, `900px`, `1200px`, `1600px`],
   footer: {
