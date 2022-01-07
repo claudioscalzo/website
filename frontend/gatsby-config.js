@@ -56,5 +56,14 @@ module.exports = {
         }
       }
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Raleway`,
+        ],
+        display: 'swap'
+      }
+    },
   ],
 };
