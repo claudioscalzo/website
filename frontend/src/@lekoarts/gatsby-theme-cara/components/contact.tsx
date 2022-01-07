@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { Flex, jsx } from "theme-ui"
 import Divider from "../elements/divider"
 import Inner from "../elements/inner"
 import Content from "../elements/content"
@@ -12,7 +12,7 @@ import ContactMDX from "../sections/contact"
 const Contact = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>
     <Divider fill="divider" speed={0.2} offset={offset} factor={factor}>
-      <div sx={{ position: `absolute`, bottom: 0, width: `full`, transform: `matrix(1, 0, 0, -1, 0, 0)` }}>
+      <div sx={{ position: `relative`, bottom: 0, width: `full`, transform: `matrix(1, 0, 0, -1, 0, 0)` }}>
         <div
           sx={{
             position: `relative`,
@@ -38,7 +38,9 @@ const Contact = ({ offset, factor = 1 }: { offset: number; factor?: number }) =>
       <Inner>
         <ContactMDX />
       </Inner>
-      <Footer />
+      <Flex sx={{ justifyContent: `center`, alignItems: `center`, position: `relative`, bottom: -4, width: `full` }}>
+        <Footer />
+      </Flex>
     </Content>
     <Divider speed={0.1} offset={offset} factor={factor}>
       <UpDown>

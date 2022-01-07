@@ -45,7 +45,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
             alignItems: `center`,
           }}
         >
-          <Svg icon="arrowDown" width={20} color="icon_darkest" top="85%" opacity="100%"/>
+          <Svg icon="arrowDown" width={20} top="85%" opacity="100%"/>
         </Flex>
       </UpDownFast>
     </Divider>

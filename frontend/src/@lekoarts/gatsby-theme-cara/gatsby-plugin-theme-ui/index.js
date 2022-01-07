@@ -27,7 +27,7 @@ const theme = merge(tailwind, {
     icon_purple: tailwind.colors.purple[6],
     icon_green: tailwind.colors.green[5],
   },
-  breakpoints: [`400px`, `600px`, `900px`, `1200px`, `1600px`],
+  breakpoints: [`400px`, `700px`, `900px`, `1200px`, `1600px`],
   footer: {
     textAlign: `center`,
     display: `block`,

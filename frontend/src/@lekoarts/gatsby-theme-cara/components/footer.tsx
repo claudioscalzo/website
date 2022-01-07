@@ -2,9 +2,7 @@
 
 /** @jsx jsx */
 import { Box, Flex, Link, jsx } from "theme-ui"
-import Gatsby from "../../../images/gatsby.svg";
-import GitHub from "../../../images/github.svg";
-import AWS from "../../../images/aws.svg";
+import Icon from './icons';
 
 const Footer = () => {
   return (
@@ -30,7 +28,7 @@ const Footer = () => {
             "align-items": "center",
           }}
         >
-          Powered by the <Gatsby width="1rem" sx={{ ml: 1, mr: 1}}/> Gatsby web framework
+          Powered by the&nbsp;<Icon tool="Gatsby" width="1rem"/>&nbsp;Gatsby web framework
         </Link>
       </ Flex>
       <Flex
@@ -52,7 +50,7 @@ const Footer = () => {
             "align-items": "center",
           }}
         >
-          Source code available on <GitHub width="1rem" sx={{ ml: 1, mr: 1}}/> GitHub
+          Source code available on&nbsp;<Icon tool="GitHub" width="1rem"/>&nbsp;GitHub
         </Link>
       </Flex>
       <Flex
@@ -74,7 +72,7 @@ const Footer = () => {
             "align-items": "center",
           }}
         >
-          Hosted on <AWS width="1.5rem" sx={{ ml: 1}}/>
+          Hosted on&nbsp;<Icon tool="AWS" width="1.5rem"/>
         </Link>
       </Flex>
     </Box>

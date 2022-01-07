@@ -1,14 +1,16 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
+import Icon from "./icons"
 
 type ProjectCardProps = {
+  icon: string
   link: string
   title: string
   children: React.ReactNode
   bg: string
 }
 
-const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
+const ProjectCard = ({ link, icon, title, children, bg }: ProjectCardProps) => (
   <a
     href={link}
     target="_blank"
@@ -31,19 +33,22 @@ const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
       },
     }}
   >
-    <div sx={{ opacity: 0.85, textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)` }}>{children}</div>
+    <div sx={{display: "block", float: "right", verticalAlign: "middle"}}>
+      <Icon tool={icon} width="5rem"/>
+    </div>
     <div
       sx={{
-        textTransform: `uppercase`,
         letterSpacing: `wide`,
-        pt: 4,
-        fontSize: [4, 5],
-        fontWeight: `medium`,
+        pt: 0,
+        fontSize: [3, 4],
+        fontWeight: `semibold`,
         lineHeight: 1,
+        mb: 1,
       }}
     >
       {title}
     </div>
+    <div sx={{ fontSize: 2, "max-width": "25rem", opacity: 0.85, textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)` }}>{children}</div>
   </a>
 )
 
