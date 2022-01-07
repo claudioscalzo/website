@@ -65,9 +65,18 @@ const icons = {
     ),
     viewBox: `0 0 100 100`,
   },
+  arrowDown: {
+    shape: (
+      <React.Fragment>
+        <path d="M14.83,20.82h0a1.28,1.28,0,0,1-1-.52L.25,2a1.27,1.27,0,0,1,2-1.51L14.84,17.45,27.73.5a1.26,1.26,0,0,1,2,1.53L15.84,20.32A1.28,1.28,0,0,1,14.83,20.82Z" />
+        <path d="M14.83,10.82h0a1.28,1.28,0,01-1-.52L.25-8a1.27,1.27,0,012-1.51L14.84,7.45,27.73-9.5a1.26,1.26,0,012,1.53L15.84,10.32A1.28,1.28,0,0114.83,10.82Z" />
+      </React.Fragment>
+    ),
+    viewBox: `0 -15 50 50`,
+  },
 }
 
-type IconType = "triangle" | "circle" | "arrowUp" | "upDown" | "box" | "hexa" | "cross"
+type IconType = "triangle" | "circle" | "arrowUp" | "upDown" | "box" | "hexa" | "cross" | "arrowDown"
 
 type SVGProps = {
   stroke?: boolean
@@ -75,11 +84,12 @@ type SVGProps = {
   width: number
   icon: IconType
   left: string
+  opacity: string,
   top: string
   hiddenMobile?: boolean
 }
 
-const Svg = ({ stroke = false, color = ``, width, icon, left, top, hiddenMobile = false }: SVGProps) => (
+const Svg = ({ stroke = false, color = ``, width, icon, left, opacity = `20%`, top, hiddenMobile = false }: SVGProps) => (
   <svg
     sx={{
       position: `absolute`,
@@ -90,6 +100,8 @@ const Svg = ({ stroke = false, color = ``, width, icon, left, top, hiddenMobile 
       width,
       left,
       top,
+      opacity: opacity,
+      margin: `0 0 0 -30px`,
     }}
     viewBox={icons[icon].viewBox}
   >

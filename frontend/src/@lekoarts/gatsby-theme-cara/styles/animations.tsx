@@ -1,3 +1,5 @@
+// SHADOWED
+
 /** @jsx jsx */
 import * as React from "react"
 import { keyframes, css, jsx } from "@emotion/react"
@@ -32,12 +34,25 @@ const upDownWide = keyframes`
   }
 `
 
+const upDownFast = keyframes`
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(15px);
+  }
+`
+
 const upDownAnimation = css`
   ${upDown} 4s ease-in-out infinite alternate;
 `
 
 const upDownWideAnimation = css`
   ${upDownWide} 18s ease-in-out infinite alternate;
+`
+
+const upDownFastAnimation = css`
+  ${upDownFast} 1s ease-in-out infinite alternate;
 `
 
 export function UpDown({ children }: { children: React.ReactNode }) {
@@ -62,6 +77,23 @@ export function UpDownWide({ children }: { children: React.ReactNode }) {
     <div
       css={css`
         animation: ${upDownWideAnimation};
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      `}
+    >
+      {children}
+    </div>
+  )
+}
+
+export function UpDownFast({ children }: { children: React.ReactNode }) {
+  return (
+    <div
+      css={css`
+        animation: ${upDownFastAnimation};
         position: absolute;
         top: 0;
         left: 0;
