@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <Box as="footer" variant="footer">
-      &copy; {new Date().getFullYear()}. ClaudioScalzo.com
+      &copy; {new Date().getFullYear()} Claudio Scalzo
       <br />
       <Flex
         sx={{
@@ -17,7 +17,7 @@ const Footer = () => {
           color: `text`,
           fontWeight: `normal`,
           fontSize: `small`,
-          a: { color: `text`, fontSize: `small` },
+          a: { fontSize: `small` },
         }}
       >
         <div>Built with</div>
