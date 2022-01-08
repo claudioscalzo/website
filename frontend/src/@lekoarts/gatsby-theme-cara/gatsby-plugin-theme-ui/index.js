@@ -79,7 +79,7 @@ const theme = merge(tailwind, {
       textShadow: `rgba(255, 255, 255, 0.15) 0px 5px 35px`,
       letterSpacing: `wide`,
       color: `heading`,
-      maxWidth: `80%`
+      maxWidth: `80%`,
     },
     h2: {
       fontSize: [4, 5, 6],

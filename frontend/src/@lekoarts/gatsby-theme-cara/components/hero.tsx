@@ -148,7 +148,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
         src="../../../images/profile.png"
         alt="Claudio Scalzo"
         width={800}
-        sx={{ position: "absolute", bottom: 110, right: -400, opacity: "90%"}}
+        sx={{ position: "absolute", bottom: 110, right: -400, opacity: "90%" }}
       />
     </Content>
     <Divider speed={0.2} offset={offset} factor={factor}>
@@ -159,7 +159,13 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
             alignItems: `center`,
           }}
         >
-          <Svg icon="arrowDown" width={20} top="85%" opacity="100%" color={color} />
+          <Svg
+            icon="arrowDown"
+            width={20}
+            top="85%"
+            opacity="100%"
+            color={color}
+          />
         </Flex>
       </UpDownFast>
     </Divider>
