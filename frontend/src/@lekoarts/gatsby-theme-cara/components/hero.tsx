@@ -1,5 +1,3 @@
-// SHADOWED
-
 /** @jsx jsx */
 import { Flex, jsx } from "theme-ui"
 import Divider from "../elements/divider"

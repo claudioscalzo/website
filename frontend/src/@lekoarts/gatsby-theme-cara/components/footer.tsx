@@ -1,5 +1,3 @@
-// SHADOWED
-
 /** @jsx jsx */
 import { Box, Flex, Link, jsx } from "theme-ui"
 import Icon from './icons';

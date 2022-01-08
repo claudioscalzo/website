@@ -1,5 +1,3 @@
-// SHADOWED
-
 import { merge } from "theme-ui"
 import { tailwind } from "@theme-ui/presets"
 
