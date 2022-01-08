@@ -7,7 +7,7 @@ module.exports = {
     title: siteTitle,
     siteDescription: siteTitle,
     siteHeadline: siteTitle,
-    siteImage: "/profile.jpg",
+    siteImage: "/profile.png",
     siteLanguage: "en",
     siteTitle: siteTitle,
     siteTitleAlt: siteTitle,
