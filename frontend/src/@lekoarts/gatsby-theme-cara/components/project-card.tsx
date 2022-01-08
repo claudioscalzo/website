@@ -17,7 +17,7 @@ const ProjectCard = ({ link, icon, title, children, bg }: ProjectCardProps) => (
     rel="noreferrer noopener"
     sx={{
       width: `100%`,
-      boxShadow: `lg`,
+      boxShadow: `0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1)`,
       position: `relative`,
       textDecoration: `none`,
       borderRadius: `lg`,
