@@ -50,7 +50,7 @@ const ProjectCard = ({ link, icon, title, children, bg }: ProjectCardProps) => (
     </div>
     <div
       sx={{
-        fontSize: 2,
+        fontSize: [2, 3],
         maxWidth: "25rem",
         opacity: 0.85,
         textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)`,

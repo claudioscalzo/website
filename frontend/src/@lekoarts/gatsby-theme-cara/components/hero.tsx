@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { Flex, jsx } from "theme-ui";
+import { color } from "../styles/utils";
 import Divider from "../elements/divider";
 import Inner from "../elements/inner";
 import Content from "../elements/content";
@@ -141,6 +142,16 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
         left="80%"
         top="70%"
       />
+    </Divider>
+    <Content speed={-0.22} offset={offset + 0.2} factor={factor}>
+      <StaticImage
+        src="../../../images/profile.png"
+        alt="Claudio Scalzo"
+        width={800}
+        sx={{ position: "absolute", bottom: 110, right: -400, opacity: "90%"}}
+      />
+    </Content>
+    <Divider speed={0.2} offset={offset} factor={factor}>
       <UpDownFast>
         <Flex
           sx={{
@@ -148,18 +159,10 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
             alignItems: `center`,
           }}
         >
-          <Svg icon="arrowDown" width={20} top="85%" opacity="100%" />
+          <Svg icon="arrowDown" width={20} top="85%" opacity="100%" color={color} />
         </Flex>
       </UpDownFast>
     </Divider>
-    <Content speed={-0.22} offset={offset + 0.2} factor={factor}>
-      <StaticImage
-        src="../../../images/profile.png"
-        alt="Claudio Scalzo"
-        width={800}
-        sx={{ position: "absolute", bottom: 115, right: -400, opacity: "90%"}}
-      />
-    </Content>
     <Content
       sx={{ variant: `texts.bigger` }}
       speed={0.4}
