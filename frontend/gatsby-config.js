@@ -40,27 +40,25 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-react-svg',
+      resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: `${__dirname}/src/images/icons`
-        }
-      }
+          include: `${__dirname}/src/images/icons`,
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `Raleway`,
-        ],
-        display: 'swap'
-      }
+        fonts: [`Raleway`],
+        display: "swap",
+      },
     },
     {
-      resolve: 'gatsby-plugin-emoji-favicon',
+      resolve: "gatsby-plugin-emoji-favicon",
       options: {
-        emoji: `🍔`
-      }
+        emoji: `🍔`,
+      },
     },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,

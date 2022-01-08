@@ -1,6 +1,6 @@
 /** @jsx jsx */
-import { Box, Flex, Link, jsx } from "theme-ui"
-import Icon from './icons';
+import { Box, Flex, Link, jsx } from "theme-ui";
+import Icon from "./icons";
 
 const Footer = () => {
   return (
@@ -22,13 +22,15 @@ const Footer = () => {
           aria-label="Link to the Gatsby source code"
           href="https://github.com/gatsbyjs/gatsby"
           style={{
-            "display": "inline-flex",
-            "alignItems": "center",
+            display: "inline-flex",
+            alignItems: "center",
           }}
         >
-          Powered by the&nbsp;<Icon tool="Gatsby" width="1rem"/>&nbsp;Gatsby web framework
+          Powered by the&nbsp;
+          <Icon tool="Gatsby" width="1rem" />
+          &nbsp;Gatsby web framework
         </Link>
-      </ Flex>
+      </Flex>
       <Flex
         sx={{
           justifyContent: `center`,
@@ -44,11 +46,13 @@ const Footer = () => {
           aria-label="Link to the frontend source code"
           href="https://github.com/claudioscalzo/website/tree/master/frontend"
           style={{
-            "display": "inline-flex",
-            "alignItems": "center",
+            display: "inline-flex",
+            alignItems: "center",
           }}
         >
-          Source code available on&nbsp;<Icon tool="GitHub" width="1rem"/>&nbsp;GitHub
+          Source code available on&nbsp;
+          <Icon tool="GitHub" width="1rem" />
+          &nbsp;GitHub
         </Link>
       </Flex>
       <Flex
@@ -66,15 +70,16 @@ const Footer = () => {
           aria-label="Link to the infrastructure source code"
           href="https://github.com/claudioscalzo/website/tree/master/infrastructure"
           style={{
-            "display": "inline-flex",
-            "alignItems": "center",
+            display: "inline-flex",
+            alignItems: "center",
           }}
         >
-          Hosted on&nbsp;<Icon tool="AWS" width="1.5rem"/>
+          Hosted on&nbsp;
+          <Icon tool="AWS" width="1.5rem" />
         </Link>
       </Flex>
     </Box>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

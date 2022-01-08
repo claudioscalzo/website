@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Gatsby from "../../../images/icons/gatsby.svg";
 import GitHub from "../../../images/icons/github.svg";
 import AWS from "../../../images/icons/aws.svg";
@@ -13,9 +13,9 @@ const icons = {
   LinkedIn: LinkedIn,
   Email: Email,
   CV: CV,
-}
+};
 
 export default function Flag(props) {
   const Icon = icons[props.tool];
-  return <Icon width={props.width}/>;
+  return <Icon width={props.width} />;
 }

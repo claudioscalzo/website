@@ -1,13 +1,14 @@
-import * as React from "react"
-import ProjectCard from "../components/project-card"
+import * as React from "react";
+import ProjectCard from "../components/project-card";
 
 const components = {
   // eslint-disable-next-line react/display-name
+  // eslint-disable-next-line react/prop-types
   ProjectCard: ({ link, title, bg, children, ...props }) => (
     <ProjectCard {...props} link={link} title={title} bg={bg}>
       {children}
     </ProjectCard>
   ),
-}
+};
 
-export default components
+export default components;

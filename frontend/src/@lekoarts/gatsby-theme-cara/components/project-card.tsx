@@ -1,14 +1,14 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
-import Icon from "./icons"
+import { jsx } from "theme-ui";
+import Icon from "./icons";
 
 type ProjectCardProps = {
-  icon: string
-  link: string
-  title: string
-  children: React.ReactNode
-  bg: string
-}
+  icon: string;
+  link: string;
+  title: string;
+  children: React.ReactNode;
+  bg: string;
+};
 
 const ProjectCard = ({ link, icon, title, children, bg }: ProjectCardProps) => (
   <a
@@ -33,8 +33,8 @@ const ProjectCard = ({ link, icon, title, children, bg }: ProjectCardProps) => (
       },
     }}
   >
-    <div sx={{display: "block", float: "right", verticalAlign: "middle"}}>
-      <Icon tool={icon} width="5rem"/>
+    <div sx={{ display: "block", float: "right", verticalAlign: "middle" }}>
+      <Icon tool={icon} width="5rem" />
     </div>
     <div
       sx={{
@@ -48,8 +48,17 @@ const ProjectCard = ({ link, icon, title, children, bg }: ProjectCardProps) => (
     >
       {title}
     </div>
-    <div sx={{ fontSize: 2, "maxWidth": "25rem", opacity: 0.85, textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)` }}>{children}</div>
+    <div
+      sx={{
+        fontSize: 2,
+        maxWidth: "25rem",
+        opacity: 0.85,
+        textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)`,
+      }}
+    >
+      {children}
+    </div>
   </a>
-)
+);
 
-export default ProjectCard
+export default ProjectCard;

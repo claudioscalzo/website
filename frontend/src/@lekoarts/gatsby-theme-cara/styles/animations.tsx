@@ -1,6 +1,6 @@
 /** @jsx jsx */
-import * as React from "react"
-import { keyframes, css, jsx } from "@emotion/react"
+import * as React from "react";
+import { keyframes, css, jsx } from "@emotion/react";
 
 const wave = keyframes`
   0% {
@@ -12,7 +12,7 @@ const wave = keyframes`
   100% {
     d: path("M 0 100 Q 150 350 400 200 Q 650 50 800 300 L 800 0 L 0 0 L 0 100 Z");
   }
-`
+`;
 
 const upDown = keyframes`
   from {
@@ -21,7 +21,7 @@ const upDown = keyframes`
   to {
     transform: translateY(30px);
   }
-`
+`;
 
 const upDownWide = keyframes`
   from {
@@ -30,7 +30,7 @@ const upDownWide = keyframes`
   to {
     transform: translateY(200px);
   }
-`
+`;
 
 const upDownFast = keyframes`
   from {
@@ -39,19 +39,19 @@ const upDownFast = keyframes`
   to {
     transform: translateY(15px);
   }
-`
+`;
 
 const upDownAnimation = css`
   ${upDown} 4s ease-in-out infinite alternate;
-`
+`;
 
 const upDownWideAnimation = css`
   ${upDownWide} 18s ease-in-out infinite alternate;
-`
+`;
 
 const upDownFastAnimation = css`
   ${upDownFast} 1s ease-in-out infinite alternate;
-`
+`;
 
 export function UpDown({ children }: { children: React.ReactNode }) {
   return (
@@ -67,7 +67,7 @@ export function UpDown({ children }: { children: React.ReactNode }) {
     >
       {children}
     </div>
-  )
+  );
 }
 
 export function UpDownWide({ children }: { children: React.ReactNode }) {
@@ -84,7 +84,7 @@ export function UpDownWide({ children }: { children: React.ReactNode }) {
     >
       {children}
     </div>
-  )
+  );
 }
 
 export function UpDownFast({ children }: { children: React.ReactNode }) {
@@ -101,7 +101,8 @@ export function UpDownFast({ children }: { children: React.ReactNode }) {
     >
       {children}
     </div>
-  )
+  );
 }
 
-export const waveAnimation = (length: string) => `${wave} ${length} linear infinite alternate`
+export const waveAnimation = (length: string) =>
+  `${wave} ${length} linear infinite alternate`;

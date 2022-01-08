@@ -1,7 +1,7 @@
 /** @jsx jsx */
-import * as React from "react"
-import { jsx } from "theme-ui"
-import { hidden } from "../styles/utils"
+import * as React from "react";
+import { jsx } from "theme-ui";
+import { hidden } from "../styles/utils";
 
 const icons = {
   triangle: {
@@ -74,22 +74,39 @@ const icons = {
     ),
     viewBox: `0 -15 50 50`,
   },
-}
+};
 
-type IconType = "triangle" | "circle" | "arrowUp" | "upDown" | "box" | "hexa" | "cross" | "arrowDown"
+type IconType =
+  | "triangle"
+  | "circle"
+  | "arrowUp"
+  | "upDown"
+  | "box"
+  | "hexa"
+  | "cross"
+  | "arrowDown";
 
 type SVGProps = {
-  stroke?: boolean
-  color?: string | number | any
-  width: number
-  icon: IconType
-  left: string
-  opacity: string,
-  top: string
-  hiddenMobile?: boolean
-}
+  stroke?: boolean;
+  color?: string | number | any;
+  width: number;
+  icon: IconType;
+  left: string;
+  opacity: string;
+  top: string;
+  hiddenMobile?: boolean;
+};
 
-const Svg = ({ stroke = false, color = ``, width, icon, left = `50%`, opacity = `20%`, top, hiddenMobile = false }: SVGProps) => (
+const Svg = ({
+  stroke = false,
+  color = ``,
+  width,
+  icon,
+  left = `50%`,
+  opacity = `20%`,
+  top,
+  hiddenMobile = false,
+}: SVGProps) => (
   <svg
     sx={{
       position: `absolute`,
@@ -107,6 +124,6 @@ const Svg = ({ stroke = false, color = ``, width, icon, left = `50%`, opacity = 
   >
     {icons[icon].shape}
   </svg>
-)
+);
 
-export default Svg
+export default Svg;
