@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Global } from "@emotion/react";
+import "@fontsource/raleway";
 import SEO from "./seo";
 
 type LayoutProps = { children: React.ReactNode; className?: string };
