@@ -62,6 +62,7 @@ const theme = merge(tailwind, {
       "--baseline-multiplier": 0.179,
       "--x-height-multiplier": 0.35,
       color: `text`,
+      listStyle: `bullet`,
     },
     blockquote: {
       marginLeft: 0,

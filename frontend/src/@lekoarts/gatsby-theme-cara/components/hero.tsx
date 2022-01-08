@@ -152,6 +152,14 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
         </Flex>
       </UpDownFast>
     </Divider>
+    <Content speed={-0.22} offset={offset + 0.2} factor={factor}>
+      <StaticImage
+        src="../../../images/profile.png"
+        alt="Claudio Scalzo"
+        width={800}
+        sx={{ position: "absolute", bottom: 115, right: -400, opacity: "90%"}}
+      />
+    </Content>
     <Content
       sx={{ variant: `texts.bigger` }}
       speed={0.4}
@@ -161,15 +169,6 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
       <Inner>
         <Intro />
       </Inner>
-    </Content>
-    <Content speed={-0.22} offset={offset + 0.2} factor={factor}>
-      <StaticImage
-        data-sal="fade"
-        src="../../../images/profile.png"
-        alt="Claudio Scalzo"
-        width={800}
-        sx={{ position: "absolute", top: -120, right: "-25rem" }}
-      />
     </Content>
   </div>
 );
