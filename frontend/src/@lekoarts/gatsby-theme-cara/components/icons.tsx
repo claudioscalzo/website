@@ -1,10 +1,10 @@
 import React from 'react';
-import Gatsby from "../../../images/gatsby.svg";
-import GitHub from "../../../images/github.svg";
-import AWS from "../../../images/aws.svg";
-import LinkedIn from "../../../images/linkedin.svg";
-import Email from "../../../images/email.svg";
-import CV from "../../../images/cv.svg";
+import Gatsby from "../../../images/icons/gatsby.svg";
+import GitHub from "../../../images/icons/github.svg";
+import AWS from "../../../images/icons/aws.svg";
+import LinkedIn from "../../../images/icons/linkedin.svg";
+import Email from "../../../images/icons/email.svg";
+import CV from "../../../images/icons/cv.svg";
 
 const icons = {
   Gatsby: Gatsby,

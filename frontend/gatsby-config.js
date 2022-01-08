@@ -43,7 +43,7 @@ module.exports = {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
-          include: `${__dirname}/src/images`
+          include: `${__dirname}/src/images/icons`
         }
       }
     },
@@ -62,5 +62,7 @@ module.exports = {
         emoji: `🍔`
       }
     },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
   ],
 };

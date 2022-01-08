@@ -48,7 +48,7 @@ const ProjectCard = ({ link, icon, title, children, bg }: ProjectCardProps) => (
     >
       {title}
     </div>
-    <div sx={{ fontSize: 2, "max-width": "25rem", opacity: 0.85, textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)` }}>{children}</div>
+    <div sx={{ fontSize: 2, "maxWidth": "25rem", opacity: 0.85, textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)` }}>{children}</div>
   </a>
 )
 

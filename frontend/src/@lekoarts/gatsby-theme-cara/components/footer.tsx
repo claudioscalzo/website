@@ -25,7 +25,7 @@ const Footer = () => {
           href="https://github.com/gatsbyjs/gatsby"
           style={{
             "display": "inline-flex",
-            "align-items": "center",
+            "alignItems": "center",
           }}
         >
           Powered by the&nbsp;<Icon tool="Gatsby" width="1rem"/>&nbsp;Gatsby web framework
@@ -47,7 +47,7 @@ const Footer = () => {
           href="https://github.com/claudioscalzo/website/tree/master/frontend"
           style={{
             "display": "inline-flex",
-            "align-items": "center",
+            "alignItems": "center",
           }}
         >
           Source code available on&nbsp;<Icon tool="GitHub" width="1rem"/>&nbsp;GitHub
@@ -69,7 +69,7 @@ const Footer = () => {
           href="https://github.com/claudioscalzo/website/tree/master/infrastructure"
           style={{
             "display": "inline-flex",
-            "align-items": "center",
+            "alignItems": "center",
           }}
         >
           Hosted on&nbsp;<Icon tool="AWS" width="1.5rem"/>
