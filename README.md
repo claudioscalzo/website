@@ -8,9 +8,7 @@ This repo contains the resources needed to run the [claudioscalzo.com](https://c
 
 This website is powered by the following components.
 
-```sh
-# TODO: diagram
-```
+![Components](./.docs/components.drawio.svg)
 
 ## 🍔 Layout
 
