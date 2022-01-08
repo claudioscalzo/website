@@ -149,6 +149,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
         alt="Claudio Scalzo"
         width={800}
         sx={{ position: "absolute", bottom: 110, right: -400, opacity: "90%" }}
+        placeholder="none"
       />
     </Content>
     <Divider speed={0.2} offset={offset} factor={factor}>
