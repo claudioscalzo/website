@@ -52,22 +52,6 @@ const Contact = ({
         </div>
       </div>
     </Divider>
-    <Content speed={0.4} offset={offset} factor={factor}>
-      <Inner>
-        <ContactMDX />
-      </Inner>
-      <Flex
-        sx={{
-          justifyContent: `center`,
-          alignItems: `center`,
-          position: `relative`,
-          bottom: -4,
-          width: `full`,
-        }}
-      >
-        <Footer />
-      </Flex>
-    </Content>
     <Divider speed={0.1} offset={offset} factor={factor}>
       <UpDown>
         <Svg
@@ -124,6 +108,22 @@ const Contact = ({
         top="70%"
       />
     </Divider>
+    <Content speed={0.4} offset={offset} factor={factor}>
+      <Inner>
+        <ContactMDX />
+      </Inner>
+      <Flex
+        sx={{
+          justifyContent: `center`,
+          alignItems: `center`,
+          position: `relative`,
+          bottom: -4,
+          width: `full`,
+        }}
+      >
+        <Footer />
+      </Flex>
+    </Content>
   </div>
 );
 
