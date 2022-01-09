@@ -17,7 +17,7 @@ const Projects = ({
 }) => (
   <div>
     <Divider
-      bg="linear-gradient(to right, #ff7514 0%, #ffa200 100%)"
+      bg="linear-gradient(to right, #ffa200 0%, #ff7514 100%)"
       sx={{ clipPath: `polygon(0 15%, 100% 5%, 100% 85%, 0 95%)` }}
       speed={-0.22}
       offset={1.1}
