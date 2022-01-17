@@ -19,6 +19,7 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
           },
         },
         html: {
+          fontDisplay: `block`,
           fontSize: `16px`,
           fontFamily: `Raleway`,
           WebkitTextSizeAdjust: `100%`,
