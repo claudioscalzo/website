@@ -27,7 +27,7 @@ const Footer = () => {
           }}
         >
           Powered by the&nbsp;
-          <Icon tool="Gatsby" width="1rem" />
+          <Icon tool="Gatsby" width={15} />
           &nbsp;Gatsby web framework
         </Link>
       </Flex>
@@ -51,7 +51,7 @@ const Footer = () => {
           }}
         >
           Source code available on&nbsp;
-          <Icon tool="GitHub" width="1rem" />
+          <Icon tool="GitHub" width={15} />
           &nbsp;GitHub
         </Link>
       </Flex>
@@ -75,7 +75,7 @@ const Footer = () => {
           }}
         >
           Hosted on&nbsp;
-          <Icon tool="AWS" width="1.5rem" />
+          <Icon tool="AWS" width={20} />
         </Link>
       </Flex>
     </Box>

@@ -34,7 +34,7 @@ const ProjectCard = ({ link, icon, title, children, bg }: ProjectCardProps) => (
     }}
   >
     <div sx={{ display: "block", float: "right", verticalAlign: "middle" }}>
-      <Icon tool={icon} width="5rem" />
+      <Icon tool={icon} width={100} />
     </div>
     <div
       sx={{
