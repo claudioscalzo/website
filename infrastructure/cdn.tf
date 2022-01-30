@@ -29,7 +29,7 @@ resource "aws_cloudfront_distribution" "main" {
   wait_for_deployment = false
   price_class         = "PriceClass_100"
 
-  aliases = [var.domain]
+  aliases = [var.domain, "*.${var.domain}"]
   viewer_certificate {
     # to create the distribution only after the cert validation, we take the cert arn from this resource 👇
     acm_certificate_arn = aws_acm_certificate_validation.main.certificate_arn
