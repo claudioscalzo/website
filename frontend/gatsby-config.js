@@ -52,6 +52,12 @@ module.exports = {
         emoji: `🍔`,
       },
     },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: siteAddress.href,
+      },
+    },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
