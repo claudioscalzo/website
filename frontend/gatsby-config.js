@@ -62,7 +62,7 @@ module.exports = {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
         host: siteAddress.href,
-        sitemap: `${siteAddress.href}/sitemap/sitemap-index.xml`,
+        sitemap: new URL(`/sitemap/sitemap-index.xml`, siteAddress.href).href,
         policy: [{ userAgent: `*`, allow: `/` }],
       },
     },
