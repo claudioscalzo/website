@@ -58,6 +58,14 @@ module.exports = {
         siteUrl: siteAddress.href,
       },
     },
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: siteAddress.href,
+        sitemap: `${siteAddress.href}/sitemap/sitemap-index.xml`,
+        policy: [{ userAgent: `*`, allow: `/` }],
+      },
+    },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
