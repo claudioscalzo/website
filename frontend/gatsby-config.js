@@ -5,11 +5,11 @@ module.exports = {
   siteMetadata: {
     author: "@claudioscalzo",
     title: siteTitle,
-    siteDescription: siteTitle,
+    siteDescription: "Claudio Scalzo - Personal Website",
     siteHeadline: siteTitle,
     siteLanguage: "en",
     siteTitle: siteTitle,
-    siteTitleAlt: siteTitle,
+    siteTitleAlt: "Claudio Scalzo",
     siteUrl: siteAddress.href,
   },
   plugins: [
