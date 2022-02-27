@@ -43,8 +43,8 @@ const Footer = () => {
         }}
       >
         <Link
-          aria-label="Link to the frontend source code"
-          href="https://github.com/claudioscalzo/website/tree/master/frontend"
+          aria-label="Link to the website source code"
+          href="https://github.com/claudioscalzo/website"
           style={{
             display: "inline-flex",
             alignItems: "center",
