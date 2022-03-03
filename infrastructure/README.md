@@ -1,6 +1,6 @@
 # 🏗 Infrastructure
 
-The website infrastructure is managed by [Terraform](https://github.com/hashicorp/terraform), by using the official [AWS Provider](https://github.com/hashicorp/terraform-provider-aws).
+The website infrastructure is managed with [Terraform](https://github.com/hashicorp/terraform), by using the official [AWS Provider](https://github.com/hashicorp/terraform-provider-aws).
 
 ## 📁 Layout
 
