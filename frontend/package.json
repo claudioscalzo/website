@@ -20,7 +20,7 @@
     "invalidate-cache": "aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_DISTRIBUTION_ID} --paths '/*'"
   },
   "dependencies": {
-    "@fontsource/raleway": "^4.5.3",
+    "@fontsource/raleway": "^4.5.5",
     "@lekoarts/gatsby-theme-cara": "^3.0.5",
     "animate.css": "^4.1.1",
     "gatsby": "^4.10.1",
