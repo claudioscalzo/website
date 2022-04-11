@@ -23,7 +23,7 @@
     "@fontsource/raleway": "^4.5.5",
     "@lekoarts/gatsby-theme-cara": "^3.0.6",
     "animate.css": "^4.1.1",
-    "gatsby": "^4.11.2",
+    "gatsby": "^4.11.3",
     "gatsby-plugin-canonical-urls": "^4.11.0",
     "gatsby-plugin-emoji-favicon": "^1.5.0",
     "gatsby-plugin-image": "^2.11.1",
