@@ -3795,13 +3795,13 @@ babel-plugin-polyfill-regenerator@^0.3.0:
   dependencies:
     "@babel/helper-define-polyfill-provider" "^0.3.1"
 
-babel-plugin-remove-graphql-queries@^4.11.1:
-  version "4.11.1"
-  resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-4.11.1.tgz#6f107865e8c1a83807c4b48b2262f5e0e0ba537e"
-  integrity sha512-Bqbeow4Xf+Vm4YhAucRGJjf9pNAXakSndYiLKfvef/W6mdtBh00SM8FMaX0U3rtR7ZUXV63RmIyOybVQ6SWCyg==
+babel-plugin-remove-graphql-queries@^4.11.1, babel-plugin-remove-graphql-queries@^4.13.0:
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-4.13.0.tgz#fe89020d3aab1e93e6658c91291d7d7b4e2d4e8d"
+  integrity sha512-YQZVaRo0fs42ifiDECXsYXJNc9AzD+E/4H16ByuaB8eV9ndcZcEGxOChsXPJH20GXJlQqgcAQk4vH1Zrjw0a6w==
   dependencies:
     "@babel/runtime" "^7.15.4"
-    gatsby-core-utils "^3.11.1"
+    gatsby-core-utils "^3.13.0"
 
 babel-plugin-transform-react-remove-prop-types@^0.4.24:
   version "0.4.24"
@@ -6762,10 +6762,10 @@ gatsby-cli@^4.11.2:
     yoga-layout-prebuilt "^1.10.0"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^3.11.1, gatsby-core-utils@^3.8.2:
-  version "3.11.1"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.11.1.tgz#ea87c1d3aa45c26c9ea32b8e8b029afe6a56f8c7"
-  integrity sha512-Op9/uihtcsDLlZDfRsGJ1ya2mFx2YH9Zmx93bawElZ0YpIzKjCkNTp+I5i5UANxvs5I+Fljl0WHQRudMWg+fWA==
+gatsby-core-utils@^3.11.1, gatsby-core-utils@^3.13.0, gatsby-core-utils@^3.8.2:
+  version "3.13.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.13.0.tgz#b6137bbd285e41a6811ccd33fcd5d5f6a5a17aef"
+  integrity sha512-uAyy54t9dYAUHjLq38QfX/pxyWxsqDiWN/+Ppg/KXTbE83LUQlD0PctdNxz9jFmJ8CgE1BUbfUKpmemh8BLkjw==
   dependencies:
     "@babel/runtime" "^7.15.4"
     ci-info "2.0.0"
@@ -6775,7 +6775,7 @@ gatsby-core-utils@^3.11.1, gatsby-core-utils@^3.8.2:
     fs-extra "^10.0.0"
     got "^11.8.3"
     import-from "^4.0.0"
-    lmdb "^2.2.4"
+    lmdb "^2.2.6"
     lock "^1.1.0"
     node-object-hash "^2.3.10"
     proper-lockfile "^4.1.2"
@@ -6859,24 +6859,24 @@ gatsby-plugin-emoji-favicon@^1.5.0:
   dependencies:
     emoji-favicon-webpack-plugin "^1.5.0"
 
-gatsby-plugin-image@^2.11.1:
-  version "2.11.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-2.11.1.tgz#1e800b65e8c18cc524c5855b9dbdb907745fdb0c"
-  integrity sha512-4tfDdcczBVOL6ELKNWuXQ9h1V/5DhBMIVHmr6FPwm8xgL8ARqfQMXX2mzUjpNiu7WDiMlm9cWrTQQaZAARhAwg==
+gatsby-plugin-image@^2.13.0:
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-2.13.0.tgz#18e78fb0b36247999dbbf42189293f6315f485f2"
+  integrity sha512-Pvt84EFSneOpJPq/Vmfs6kSviIMPdLapokmJKWzT+on2Aqz8HH+/BsPZLtmf2JuN0BLxO3kD5K8ASKaCcwY6TA==
   dependencies:
     "@babel/code-frame" "^7.14.0"
     "@babel/parser" "^7.15.5"
     "@babel/runtime" "^7.15.4"
     "@babel/traverse" "^7.15.4"
     babel-jsx-utils "^1.1.0"
-    babel-plugin-remove-graphql-queries "^4.11.1"
+    babel-plugin-remove-graphql-queries "^4.13.0"
     camelcase "^5.3.1"
     chokidar "^3.5.2"
     common-tags "^1.8.2"
     fs-extra "^10.0.0"
-    gatsby-core-utils "^3.11.1"
+    gatsby-core-utils "^3.13.0"
     objectFitPolyfill "^2.3.5"
-    prop-types "^15.7.2"
+    prop-types "^15.8.1"
 
 gatsby-plugin-manifest@^4.11.1:
   version "4.11.1"
@@ -8989,6 +8989,36 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
 
+lmdb-darwin-arm64@2.3.8:
+  version "2.3.8"
+  resolved "https://registry.yarnpkg.com/lmdb-darwin-arm64/-/lmdb-darwin-arm64-2.3.8.tgz#ea36ca37ff98c769e43875c3d4087a6bcf59715e"
+  integrity sha512-QFFnLQlQn1WjSyWSKU4pdOQNPLea2/iL8LcR979LGp3y4OKmuC9fNLIiCTqp+t5QBVBOKfJZ8sqFd/5KHmDFYg==
+
+lmdb-darwin-x64@2.3.8:
+  version "2.3.8"
+  resolved "https://registry.yarnpkg.com/lmdb-darwin-x64/-/lmdb-darwin-x64-2.3.8.tgz#8ecb86dfdb410f246a4e2261f6fb49156ed0ac73"
+  integrity sha512-cPVym3ZUXJurjv9YnZ40fsJuszPzn8mvIWjcqZuhXonUXAgSxvGloAwH5HCtFF7oIT6r/iXZejfgVL1MbM97tw==
+
+lmdb-linux-arm64@2.3.8:
+  version "2.3.8"
+  resolved "https://registry.yarnpkg.com/lmdb-linux-arm64/-/lmdb-linux-arm64-2.3.8.tgz#84ce1ba84fb5546fd8a361e0b4efd5c9f2a046c4"
+  integrity sha512-9kgNOm7xhGmji2pH4UgeBbojBuH+0KeJ7C51kL7zEBxVXB/xD3IMZV42+MdSFzJJcmgEe3XuIdxt/TFSXhEEIw==
+
+lmdb-linux-arm@2.3.8:
+  version "2.3.8"
+  resolved "https://registry.yarnpkg.com/lmdb-linux-arm/-/lmdb-linux-arm-2.3.8.tgz#1a970d0836d27994836b4cbba165175bc45bc52a"
+  integrity sha512-jriO1nsPIPEBZjJ4OgshLRmi1br5E6CWnPTwSz3XO1UvDh6GEj87IL/brQxJq6HlpUj01wrQCqpvJMBTMtk+Ew==
+
+lmdb-linux-x64@2.3.8:
+  version "2.3.8"
+  resolved "https://registry.yarnpkg.com/lmdb-linux-x64/-/lmdb-linux-x64-2.3.8.tgz#84196d4d3dee37b43dc19a290bc9605412c30799"
+  integrity sha512-qTdGkBKhuROMNxrOsI31YInjBEr3b29tI80XutD3kcO3UgBXE/I1Jy57WOde6ghEdPlfh3pkycme6+Q+tsmhyA==
+
+lmdb-win32-x64@2.3.8:
+  version "2.3.8"
+  resolved "https://registry.yarnpkg.com/lmdb-win32-x64/-/lmdb-win32-x64-2.3.8.tgz#50e7fd5da1ed693af5153ff0046895f8b75112b2"
+  integrity sha512-IalYsXztvgjjPmXxFEkmZ3Tio0QmDCOxYBgxQDvAghpqa4RwufbS6unbkxO+aYK6ZWjzEZbsNKFSSb/vVgkn2A==
+
 lmdb@2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/lmdb/-/lmdb-2.2.4.tgz#6494d5a1d1db152e0be759edcfa06893e4cbdb53"
@@ -9000,7 +9030,7 @@ lmdb@2.2.4:
     ordered-binary "^1.2.4"
     weak-lru-cache "^1.2.2"
 
-lmdb@^2.0.2, lmdb@^2.2.3, lmdb@^2.2.4:
+lmdb@^2.0.2, lmdb@^2.2.3:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/lmdb/-/lmdb-2.2.6.tgz#a52ef533812b8abcbe0033fc9d74d215e7dfc0a0"
   integrity sha512-UmQV0oZZcV3EN6rjcAjIiuWcc3MYZGWQ0GUYz46Ron5fuTa/dUow7WSQa6leFkvZIKVUdECBWVw96tckfEzUFQ==
@@ -9010,6 +9040,25 @@ lmdb@^2.0.2, lmdb@^2.2.3, lmdb@^2.2.4:
     node-gyp-build "^4.2.3"
     ordered-binary "^1.2.4"
     weak-lru-cache "^1.2.2"
+
+lmdb@^2.2.6:
+  version "2.3.8"
+  resolved "https://registry.yarnpkg.com/lmdb/-/lmdb-2.3.8.tgz#24167e33fed9aad479dd6ee3e98e9a0334d75623"
+  integrity sha512-SoYYrcmJWJgIG4PSkVJiXot3m9035zE0FRUgqhgzZIO6LnikbORzBznxbSrN7SaogR95w9lgTm+LwW+Os4mN5Q==
+  dependencies:
+    msgpackr "^1.5.4"
+    nan "^2.14.2"
+    node-addon-api "^4.3.0"
+    node-gyp-build-optional-packages "^4.3.2"
+    ordered-binary "^1.2.4"
+    weak-lru-cache "^1.2.2"
+  optionalDependencies:
+    lmdb-darwin-arm64 "2.3.8"
+    lmdb-darwin-x64 "2.3.8"
+    lmdb-linux-arm "2.3.8"
+    lmdb-linux-arm64 "2.3.8"
+    lmdb-linux-x64 "2.3.8"
+    lmdb-win32-x64 "2.3.8"
 
 load-bmfont@^1.2.3, load-bmfont@^1.3.1, load-bmfont@^1.4.0:
   version "1.4.1"
