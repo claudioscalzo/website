@@ -1950,19 +1950,19 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@lekoarts/gatsby-theme-cara@^3.0.7":
-  version "3.0.7"
-  resolved "https://registry.yarnpkg.com/@lekoarts/gatsby-theme-cara/-/gatsby-theme-cara-3.0.7.tgz#fc9ba8585da46a3b871a604f2ffaef3348125bf8"
-  integrity sha512-G/HOzlfyUbEC18CJHa9kdOlYn6iaGbRhSmCHrjIewx1z+eLBk1IV3DjjZM5K0ayZFH/rc7WJ4w6Yc9AwnIE3Pw==
+"@lekoarts/gatsby-theme-cara@^3.0.8":
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/@lekoarts/gatsby-theme-cara/-/gatsby-theme-cara-3.0.8.tgz#94bb63f71526e7d994ebdc08afbb042fdc21ec20"
+  integrity sha512-vjXPApX+1HSp4q3ecCy3donJNYwbKN1ORXnln/uf0bFOo/ZOcdjbjm6P5qzECfDP1BTzkcNSzoqfMh1hFIsJVw==
   dependencies:
     "@mdx-js/mdx" "^1.6.22"
-    "@react-spring/parallax" "^9.4.4"
-    "@react-spring/web" "^9.4.4"
+    "@react-spring/parallax" "^9.4.5"
+    "@react-spring/web" "^9.4.5"
     "@theme-ui/presets" "^0.11.1"
-    gatsby-plugin-mdx "^3.13.0"
-    gatsby-plugin-react-helmet "^5.13.0"
+    gatsby-plugin-mdx "^3.15.2"
+    gatsby-plugin-react-helmet "^5.15.0"
     gatsby-plugin-theme-ui "^0.11.1"
-    gatsby-source-filesystem "^4.13.0"
+    gatsby-source-filesystem "^4.15.0"
     react-helmet "^6.1.0"
     theme-ui "^0.11.1"
 
@@ -2450,7 +2450,7 @@
     "@react-spring/shared" "~9.4.5"
     "@react-spring/types" "~9.4.5"
 
-"@react-spring/parallax@^9.4.4":
+"@react-spring/parallax@^9.4.5":
   version "9.4.5"
   resolved "https://registry.yarnpkg.com/@react-spring/parallax/-/parallax-9.4.5.tgz#bdc3cdbe622dce370844059a1c9bdd3990f6f886"
   integrity sha512-oN677+AFie3rpoD/02m6FXu5RARabztJTs1SywrmeLQlFJtx/gGL9eqSgUWbTtBQ3wV7FDzJ9knjkTwFLW8GPA==
@@ -2476,7 +2476,7 @@
   resolved "https://registry.yarnpkg.com/@react-spring/types/-/types-9.4.5.tgz#9c71e5ff866b5484a7ef3db822bf6c10e77bdd8c"
   integrity sha512-mpRIamoHwql0ogxEUh9yr4TP0xU5CWyZxVQeccGkHHF8kPMErtDXJlxyo0lj+telRF35XNihtPTWoflqtyARmg==
 
-"@react-spring/web@^9.4.4", "@react-spring/web@~9.4.5":
+"@react-spring/web@^9.4.5", "@react-spring/web@~9.4.5":
   version "9.4.5"
   resolved "https://registry.yarnpkg.com/@react-spring/web/-/web-9.4.5.tgz#b92f05b87cdc0963a59ee149e677dcaff09f680e"
   integrity sha512-NGAkOtKmOzDEctL7MzRlQGv24sRce++0xAY7KlcxmeVkR7LRSGkoXHaIfm9ObzxPMcPHQYQhf3+X9jepIFNHQA==
@@ -7040,10 +7040,10 @@ gatsby-plugin-manifest@^4.15.0:
     semver "^7.3.7"
     sharp "^0.30.3"
 
-gatsby-plugin-mdx@^3.13.0:
-  version "3.15.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-3.15.0.tgz#392d7a51c185730e5d8c84c744c00aedb0b89ea4"
-  integrity sha512-HlMIEWaOenT0l6JyrPuOgxWQrINuSRjc9umHMhGsG2asBa/se83Zw45ekUIcaaErNMxqkzj0Vky6yAkFZq8HfA==
+gatsby-plugin-mdx@^3.15.2:
+  version "3.15.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-3.15.2.tgz#16f7de7534d5763bf499f47eee852c25578a06ee"
+  integrity sha512-TsEgeAq40x7IwABXZkZcGStltr6gr3DnGjmhq4QZKapjtsPeTzWKp9HhB93t0OCDD9AfWUCH/teQq0rFTvsaEw==
   dependencies:
     "@babel/core" "^7.15.5"
     "@babel/generator" "^7.15.4"
@@ -7101,7 +7101,7 @@ gatsby-plugin-page-creator@^4.15.0:
     globby "^11.1.0"
     lodash "^4.17.21"
 
-gatsby-plugin-react-helmet@^5.13.0:
+gatsby-plugin-react-helmet@^5.15.0:
   version "5.15.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-5.15.0.tgz#8011e317199c3ed87e7527d4462f0655609b8db7"
   integrity sha512-hxazz0Eea2CAUxglarK9XdtFChzbypLkD8Doe6l83cgdeLv7C5KJw2vZEpkvRyd4fgztNSkKprXT84if7IvD2g==
@@ -7239,7 +7239,7 @@ gatsby-sharp@^0.9.0:
     "@types/sharp" "^0.30.0"
     sharp "^0.30.3"
 
-gatsby-source-filesystem@^4.13.0:
+gatsby-source-filesystem@^4.15.0:
   version "4.15.0"
   resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-4.15.0.tgz#115eafc580ec0c8083b37e54336013c65e5073b3"
   integrity sha512-FlT2Tr4AE/A7PDtS7X1NM0fyl/VULkIl97KlvgW3kl31aRS/JozVLR0stYHUYNAzWi24dDJphBqwxXaGDBXNYg==
