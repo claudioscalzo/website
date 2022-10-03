@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@fontsource/raleway": "^4.5.10",
-    "@lekoarts/gatsby-theme-cara": "^3.0.11",
+    "@lekoarts/gatsby-theme-cara": "^4.0.1",
     "animate.css": "^4.1.1",
     "gatsby": "^4.24.0",
     "gatsby-plugin-canonical-urls": "^4.24.0",
