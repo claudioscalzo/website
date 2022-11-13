@@ -5,8 +5,8 @@
   "description": "ClaudioScalzo.com",
   "author": "Claudio Scalzo",
   "keywords": [
-    "gatsby",
-    "claudioscalzo.com"
+    "claudioscalzo.com",
+    "Claudio Scalzo"    
   ],
   "scripts": {
     "develop": "gatsby develop",
