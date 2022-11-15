@@ -7,8 +7,7 @@ import Content from "../elements/content";
 import Svg from "./svg";
 import { StaticImage } from "gatsby-plugin-image";
 import { UpDown, UpDownWide, UpDownFast } from "../styles/animations";
-// @ts-ignore
-import Intro from "../sections/intro";
+import Intro from "../sections/intro.mdx";
 
 const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>

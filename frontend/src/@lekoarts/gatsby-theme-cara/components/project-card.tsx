@@ -40,7 +40,7 @@ const ProjectCard = ({ link, icon, title, children, bg }: ProjectCardProps) => (
       sx={{
         letterSpacing: `wide`,
         pt: 0,
-        fontSize: [3, 4],
+        fontSize: [25, 30, 32],
         fontWeight: `semibold`,
         lineHeight: 1,
         mb: 1,
@@ -50,10 +50,14 @@ const ProjectCard = ({ link, icon, title, children, bg }: ProjectCardProps) => (
     </div>
     <div
       sx={{
-        fontSize: [2, 3],
         maxWidth: "25rem",
         opacity: 0.85,
         textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)`,
+        p: {
+          fontSize: [20, 23, 25],
+          color: `white`,
+          margin: 0,
+        },
       }}
     >
       {children}
