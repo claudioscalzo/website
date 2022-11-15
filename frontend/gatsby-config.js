@@ -1,6 +1,9 @@
 const siteAddress = new URL("https://claudioscalzo.com");
 const siteTitle = "ClaudioScalzo.com";
 
+/**
+ * @type {import('gatsby').GatsbyConfig}
+ */
 module.exports = {
   siteMetadata: {
     author: "@claudioscalzo",
@@ -70,4 +73,5 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
   ],
+  trailingSlash: `never`,
 };

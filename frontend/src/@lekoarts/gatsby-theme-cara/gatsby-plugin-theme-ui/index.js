@@ -2,9 +2,9 @@ import { merge } from "theme-ui";
 import { tailwind } from "@theme-ui/presets";
 
 const theme = merge(tailwind, {
-  initialColorModeName: `light`,
   config: {
-    useCustomProperties: true,
+    initialColorModeName: `light`,
+    useColorSchemeMediaQuery: `system`,
   },
   colors: {
     primary: `#ff7514`,
@@ -73,31 +73,31 @@ const theme = merge(tailwind, {
       },
     },
     h1: {
-      fontSize: [6, 7, 8],
+      fontSize: [50, 65, 70],
       mt: 2,
       mb: 3,
       textShadow: `rgba(255, 255, 255, 0.15) 0px 5px 35px`,
       letterSpacing: `wide`,
-      color: `heading`,
+      color: `primary`,
       maxWidth: `80%`,
     },
     h2: {
-      fontSize: [4, 5, 6],
+      fontSize: [35, 40, 45],
       mt: 2,
       mb: 2,
       color: `heading`,
     },
     h3: {
-      fontSize: [3, 4, 5],
+      fontSize: [25, 30, 35],
       mt: 3,
       color: `heading`,
     },
     h4: {
-      fontSize: [2, 3, 4],
+      fontSize: [15, 20, 25],
       color: `heading`,
     },
     h5: {
-      fontSize: [1, 2, 3],
+      fontSize: [10, 15, 20],
       color: `heading`,
     },
     h6: {
@@ -126,7 +126,7 @@ const theme = merge(tailwind, {
   texts: {
     bigger: {
       p: {
-        fontSize: [2, 3, 4],
+        fontSize: [15, 25, 30],
       },
     },
   },

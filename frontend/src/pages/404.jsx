@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import { Parallax } from "@react-spring/parallax";
-import { Themed } from "theme-ui";
+import { Themed } from "@theme-ui/mdx";
 import Layout from "@lekoarts/gatsby-theme-cara/src/components/layout";
 import Divider from "@lekoarts/gatsby-theme-cara/src/elements/divider";
 import {
@@ -15,7 +15,6 @@ import Inner from "@lekoarts/gatsby-theme-cara/src/elements/inner";
 
 const NotFound = () => (
   <Layout>
-    <Seo title="404 - Not Found" />
     <Parallax pages={1}>
       <div>
         <Divider speed={0.2} offset={0} factor={1}>
@@ -205,3 +204,4 @@ const NotFound = () => (
 );
 
 export default NotFound;
+export const Head = () => <Seo title="404 - Not Found" />;
