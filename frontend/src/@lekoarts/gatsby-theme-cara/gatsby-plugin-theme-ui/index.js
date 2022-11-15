@@ -56,7 +56,7 @@ const theme = merge(tailwind, {
       },
     },
     p: {
-      fontSize: [1, 2],
+      fontSize: [15, 25, 30],
       letterSpacing: `-0.003em`,
       lineHeight: `body`,
       "--baseline-multiplier": 0.179,
@@ -67,13 +67,13 @@ const theme = merge(tailwind, {
     blockquote: {
       marginLeft: 0,
       p: {
-        fontSize: [2, 3],
+        fontSize: [15, 20, 25],
         fontWeight: `medium`,
         color: `heading`,
       },
     },
     h1: {
-      fontSize: [50, 65, 70],
+      fontSize: [48, 65, 70],
       mt: 2,
       mb: 3,
       textShadow: `rgba(255, 255, 255, 0.15) 0px 5px 35px`,
@@ -126,7 +126,7 @@ const theme = merge(tailwind, {
   texts: {
     bigger: {
       p: {
-        fontSize: [15, 25, 30],
+        fontSize: [18, 25, 30],
       },
     },
   },
