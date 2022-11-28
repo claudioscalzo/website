@@ -26,7 +26,7 @@
     "gatsby": "^5.0.1",
     "gatsby-plugin-canonical-urls": "^5.0.0",
     "gatsby-plugin-emoji-favicon": "^1.5.0",
-    "gatsby-plugin-image": "^3.0.0",
+    "gatsby-plugin-image": "^3.2.0",
     "gatsby-plugin-manifest": "^5.0.0",
     "gatsby-plugin-react-svg": "^3.1.0",
     "gatsby-plugin-robots-txt": "^1.8.0",
