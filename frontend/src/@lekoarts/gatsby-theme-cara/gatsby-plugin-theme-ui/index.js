@@ -1,10 +1,9 @@
 import { merge } from "theme-ui";
-import { tailwind } from "@theme-ui/presets";
+import tailwind from "@theme-ui/preset-tailwind";
 
 const theme = merge(tailwind, {
   config: {
     initialColorModeName: `light`,
-    useColorSchemeMediaQuery: `system`,
   },
   colors: {
     primary: `#ff7514`,
