@@ -2,17 +2,6 @@
 
 The website code is generated with the help of the [Gatsby Web Framework](https://github.com/gatsbyjs/gatsby), using [Yarn](https://github.com/yarnpkg/yarn) as a package manager.
 
-## 📁 Layout
-
-<big>
-<pre>
-frontend/
-├── <a href="./gatsby-config.js">gatsby-config.js</a>
-├── <a href="./package.json">package.json</a>
-└── <a href="./src/">src/</a>
-</pre>
-</big>
-
 ## ⚙️ Develop
 
 ```
