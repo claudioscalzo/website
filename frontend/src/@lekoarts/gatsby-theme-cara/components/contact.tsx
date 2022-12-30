@@ -107,7 +107,7 @@ const Contact = ({
         top="70%"
       />
     </Divider>
-    <Content speed={0.4} offset={offset} factor={factor}>
+    <Content speed={0.5} offset={offset} factor={factor}>
       <Inner>
         <ContactMDX />
       </Inner>
@@ -116,7 +116,7 @@ const Contact = ({
           justifyContent: `center`,
           alignItems: `center`,
           position: `relative`,
-          bottom: -4,
+          bottom: 3.5,
           width: `full`,
         }}
       >
